@@ -81,6 +81,20 @@ img {
   border-radius: 10px;
 }
 
+.btnTop {
+  width: 40px;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 40px;
+  background-color: #ffd200;
+  border: none;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
