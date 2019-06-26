@@ -105,6 +105,14 @@ img {
   cursor: pointer;
 }
 
+input.invalid {
+  border: 1px solid red;
+}
+
+input.success {
+  border: 1px solid green;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
@@ -452,18 +460,19 @@ img {
 }
 
 .portfolio__arrows {
-  max-width: 72px;
+  max-width: 120px;
   margin: auto;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 .slider__image {
-  margin-left: 31px;
+  margin-left: 20px;
 }
 
 /* Стили для блока price */
@@ -577,10 +586,6 @@ img {
   }
 }
 
-.img {
-  display: block;
-}
-
 /* Стили для блока steps */
 .step {
   margin-top: 11px;
@@ -623,6 +628,40 @@ img {
   max-width: 150px;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .step {
+    padding: 0;
+  }
+  .step__arrow {
+    display: none;
+  }
+  .step__image {
+    margin-bottom: 22px;
+  }
+  .step__text {
+    margin-bottom: 30px;
+  }
+  .steps__title {
+    max-width: 230px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 27px;
+  }
+  .steps__subtitle {
+    margin-bottom: 34px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px;
+  }
 }
 
 /* Стили для блока brif */
