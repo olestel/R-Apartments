@@ -857,6 +857,31 @@ input.success {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .map {
+    width: 100%;
+    padding-top: 457px;
+  }
+  .contacts {
+    position: absolute;
+    padding: 0 0 0 24px;
+    width: 100%;
+  }
+  .contacts__title {
+    max-width: 300px;
+    margin-top: 67px;
+    margin-bottom: 39px;
+  }
+  .contacts-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /* Стили модального окна */
 .modal {
   position: fixed;
